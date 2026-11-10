@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "card-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8108"
+paths:
+  "/cards":
+    get:
+      summary: "List cards"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create card"
+      responses:
+        "200":
+          description: OK
+  "/cards/{id}":
+    get:
+      summary: "Get card by ID"
+      responses:
+        "200":
+          description: OK
